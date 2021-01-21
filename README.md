@@ -20,7 +20,7 @@ Test: "If the first consonants include "qu", move the "u" along with the "q""
 Expect(pigLatin(“quality”)).toEqual(“alityquay”);   
 
 ## *Setup instructions:*
-Clone repository by using this [URL](https://github.com/DanielAdeyemi/Epicodus_1_20_practice_leapYear.git) and run the ***index.html*** file in your terminal
+Clone repository by using this [URL](https://github.com/DanielAdeyemi/Epicodus_1_20_practice_pigLatin.git) and run the ***index.html*** file in your terminal
 
 ## *Tecnologies used:*
 * HTML
