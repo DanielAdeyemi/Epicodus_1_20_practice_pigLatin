@@ -6,22 +6,21 @@ function pigLatin(user) {
     for (let i = 0; i < user.length; i++) {
       if (/[^euioa]/i.test(user[i])) {
         continue;
+      } else if (user[i] === 'u' && user[i - 1].toLowerCase() === 'q') {
+        let user2 = user.slice(0, i + 1);
+        let user1 = user.slice(i + 1);
+        sentence = user1 + user2 + 'ay';
       } else {
-        if (user[i] === 'u' && user[i - 1].toLowerCase() === 'q') {
-          let user2 = user.slice(0, i + 1);
-          let user1 = user.slice(i + 1);
-          sentence = user1 + user2 + 'ay';
-        } else {
-          let user2 = user.slice(0, i);
-          let user1 = user.slice(i);
-          sentence = user1 + user2 + 'ay';
-          break;
-        }
+        let user2 = user.slice(0, i);
+        let user1 = user.slice(i);
+        sentence = user1 + user2 + 'ay';
+        break;
       }
     }
   }
   return sentence;
 }
+
 
 
 $(document).ready(function() {
