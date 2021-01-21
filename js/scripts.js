@@ -1,9 +1,7 @@
 function pigLatin(user) {
-  //let vowels = ['e', 'u', 'i', 'o', 'a'];
-  let array = [];
   let sentence;
   if (/[euioa]/i.test(user[0])) {
-    sentence = user + "way";
+    sentence = user + 'way';
   } else {
     for (let i = 0; i < user.length; i++) {
       if (/[^euioa]/i.test(user[i])) {
@@ -12,11 +10,11 @@ function pigLatin(user) {
         if (user[i] === 'u' && user[i - 1].toLowerCase() === 'q') {
           let user2 = user.slice(0, i + 1);
           let user1 = user.slice(i + 1);
-          sentence = user1 + user2 + "ay";
+          sentence = user1 + user2 + 'ay';
         } else {
           let user2 = user.slice(0, i);
           let user1 = user.slice(i);
-          sentence = user1 + user2 + "ay";
+          sentence = user1 + user2 + 'ay';
           break;
         }
       }
@@ -31,6 +29,7 @@ $(document).ready(function() {
     event.preventDefault();
     let user = $('input').val();
     let out = pigLatin(user);
+    $('form').hide();
     $('.output').text(out);
   });
 });
