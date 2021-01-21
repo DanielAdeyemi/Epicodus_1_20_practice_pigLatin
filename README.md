@@ -29,7 +29,7 @@ Clone repository by using this [URL](https://github.com/DanielAdeyemi/Epicodus_1
 * Bootstrap *v5.0.0 beta*
 
 ## *Known bugs:*
-This project has almost no style and was used only for practice purporse. 
+This project has almost no style and was used only for practice purporse. Also now translator is not case-insensitive in a middle of the string(except 'q' before 'u')
 
 ## *License and copyright:*
 
