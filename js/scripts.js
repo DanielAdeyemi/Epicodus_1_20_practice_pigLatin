@@ -1,5 +1,5 @@
 function pigLatin(user) {
-  let vowels = ['e', 'u', 'i', 'o', 'a'];
+  //let vowels = ['e', 'u', 'i', 'o', 'a'];
   let array = [];
   let sentence;
   if (/[euioa]/i.test(user[0])) {
@@ -7,9 +7,11 @@ function pigLatin(user) {
   } else {
     for (let i = 0; i < user.length; i++) {
       if (/[^euioa]/i.test(user[i])) {
-        array.push(user[i])
+        continue;
       } else {
+        let user2 = user.slice(0, i);
         let user1 = user.slice(i);
+        sentence = user1 + user2 + "ay";
         break;
       }
     }
