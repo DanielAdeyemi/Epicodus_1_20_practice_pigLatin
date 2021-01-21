@@ -6,10 +6,18 @@
 This web page will take a year from the user and display if this year is a leap year or not. Uses if/else condition to solve the problem.
 
 ## *Tests*
-|test 1| test 2|
-|--------------|
-
-
+#### Test 1:
+Describe: `pigLatin()`   
+Test: "It will add 'way' to the end of words that begin with a vowel"   
+Expect(pigLatin("a")).toEqual("away");   
+#### Test 2:
+Describe: `pigLatin()`   
+Test: "It will move first consecutive consonants or "y" to the end of the word and add “ay”"    
+Expect(pigLatin(“stand”)).toEqual(“andstay”);       
+#### Test 3:
+Describe: `pigLatin()`    
+Test: "If the first consonants include "qu", move the "u" along with the "q""    
+Expect(pigLatin(“quality”)).toEqual(“alityquay”);   
 
 ## *Setup instructions:*
 Clone repository by using this [URL](https://github.com/DanielAdeyemi/Epicodus_1_20_practice_leapYear.git) and run the ***index.html*** file in your terminal

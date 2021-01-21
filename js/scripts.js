@@ -16,22 +16,15 @@ function pigLatin(user) {
       }
     }
 
-
-    //sentence = "not here";
+    return sentence;
   }
-  // TODO
 
 
-
-  return sentence;
-}
-
-
-$(document).ready(function() {
-  $('form').submit(function() {
-    event.preventDefault();
-    let user = $('input').val();
-    let out = pigLatin(user);
-    $('.output').text(out);
+  $(document).ready(function() {
+    $('form').submit(function() {
+      event.preventDefault();
+      let user = $('input').val();
+      let out = pigLatin(user);
+      $('.output').text(out);
+    });
   });
-});
